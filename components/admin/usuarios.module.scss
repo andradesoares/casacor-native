@@ -1,0 +1,51 @@
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  .selected {
+    color: #ff6c44;
+    font-weight: 600;
+  }
+  .unselected {
+    color: rgba(227, 120, 75, 0.4);
+  }
+
+  .button {
+    text-transform: uppercase;
+    padding: 0 40px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  @media (max-width: 900px) {
+    padding: 10px 0;
+    flex-wrap: wrap;
+    .button {
+      padding: 0 5px;
+    }
+  }
+}
+
+.selectButton {
+  border: none;
+  padding: 10px;
+  min-width: 150px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  background-color: #ff6c44;
+  margin-right: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nomeSelect {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #ff6c44;
+  min-width: 40%;
+  &:hover {
+    cursor: pointer;
+  }
+}
